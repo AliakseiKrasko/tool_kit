@@ -10,14 +10,14 @@ input {
     all: unset;
 }
 
-.DialogOverlay {
+.Overlay {
     background-color: var(--black-a9);
     position: fixed;
     inset: 0;
     animation: overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.DialogContent {
+.Content {
     background-color: var(--gray-1);
     border-radius: 6px;
     box-shadow: var(--shadow-6);
@@ -31,11 +31,11 @@ input {
     padding: 25px;
     animation: contentShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
 }
-.DialogContent:focus {
+.Content:focus {
     outline: none;
 }
 
-.DialogTitle {
+.Title {
     margin: 0;
     font-weight: 500;
     color: var(--mauve-12);
