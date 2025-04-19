@@ -1,12 +1,17 @@
 import {Header} from './components/Header/Header.tsx';
 import {Posts} from './components/ModalRadix/Posts.tsx';
+import { Theme } from "@radix-ui/themes";
+import { ThemeProvider } from "next-themes";
+
 
 function App() {
     return (
-        <div>
+        <ThemeProvider attribute="class">
+            <Theme appearance="inherit" accentColor="violet" grayColor="slate">
             <Header />
             <Posts />
-        </div>
+            </Theme>
+        </ThemeProvider>
     )
 }
 
