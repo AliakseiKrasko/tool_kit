@@ -1,4 +1,5 @@
-import {ModalRadix} from './ModalRadix.tsx';
+import { Button } from "../Button/Button.tsx"
+import { ModalRadix } from "../ModalRadix/ModalRadix.tsx"
 
 type Props = {
     open: boolean
@@ -7,12 +8,13 @@ type Props = {
 
 export const DeletePostModal = ({ open, onClose }: Props) => {
     return (
-        <ModalRadix open={open} onClose={onClose} modalTitle={'Delete Post'}>
+        <ModalRadix open={open} onClose={onClose} modalTitle={"Delete Post"}>
             Are you sure you want to delete this post?
             <div>
-                {/*Будем использовать обычные кнопки*/}
-                <button onClick={onClose}>Yes</button>
-                <button onClick={onClose}>No</button>
+                <Button onClick={onClose}>Yes</Button>
+                <Button onClick={onClose} variant={"secondary"}>
+                    No
+                </Button>
             </div>
         </ModalRadix>
     )

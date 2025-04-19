@@ -1,14 +1,15 @@
-import s from './Modal.module.css'
-import {ReactNode} from 'react';
-import {createPortal} from 'react-dom';
+import type { ReactNode } from "react"
+import { createPortal } from "react-dom"
+import s from "./Modal.module.css"
 
 type Props = {
     open: boolean
     onClose?: () => void
-    children: ReactNode
     modalTitle: string
-};
-export const Modal = ( { onClose, open, modalTitle, children } : Props) => {
+    children: ReactNode
+}
+
+export const Modal = ({ onClose, open, modalTitle, children }: Props) => {
     return (
         <>
             {open && (
@@ -24,10 +25,10 @@ export const Modal = ( { onClose, open, modalTitle, children } : Props) => {
                                 </button>
                             </div>
                         </div>,
-                        document.body
+                        document.body,
                     )}
                 </>
             )}
         </>
-    );
-};
+    )
+}
