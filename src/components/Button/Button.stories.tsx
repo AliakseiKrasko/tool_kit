@@ -2,25 +2,27 @@ import {Button} from './Button.tsx';
 import {Meta, StoryObj} from '@storybook/react';
 
 const meta= {
-    component: Button
+    component: Button,
+    tags: ['autodocs'],
 } satisfies Meta<typeof Button>
 
 export default meta
 
 type Story = StoryObj<typeof Button>
 
-export const Primary: Story = {
+export const Primary1: Story = {
     args: {
         variant: "primary",
         children: "Primary button"
     }
 }
 
-export const Secondary: Story = {
+/** Primary variant. Used as 'default'*/
+export const Primary: Story = {
     args: {
-        variant: "secondary",
-        children: "Secondary button"
-    }
+        variant: 'primary',
+        children: 'Primary Button',
+    },
 }
 
 export const Secondary2: Story = {
