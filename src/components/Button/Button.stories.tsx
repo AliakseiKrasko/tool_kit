@@ -15,3 +15,33 @@ export const Primary: Story = {
         children: "Primary button"
     }
 }
+
+export const Secondary: Story = {
+    args: {
+        variant: "secondary",
+        children: "Secondary button"
+    }
+}
+
+export const Secondary2: Story = {
+    args: {
+        ...Primary.args,
+        variant: "secondary",
+        children: "Secondary2 button"
+    }
+}
+
+export const PrimeriOutlined: Story = {
+    args: {
+        variant: "outlined",
+        children: "Primary button"
+    }
+};
+
+export const ButtonAsLink: Story = {
+    args: {
+        variant: "primary",
+        asChild: true,
+        children: <a href={'htpps://it-incubator.io'}>it-incubator</a>
+    }
+};
