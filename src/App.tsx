@@ -1,5 +1,5 @@
 import {Header} from './components/Header/Header.tsx';
-import {Posts} from './components/ModalRadix/Posts.tsx';
+import {Posts} from './components/Post/Posts.tsx';
 import { Theme } from "@radix-ui/themes";
 import { ThemeProvider } from "next-themes";
 

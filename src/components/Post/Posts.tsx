@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { DeletePostModal } from "./DeletePostModal.tsx"
+import { DeletePostModal } from "../DeletePostModal/DeletePostModal.tsx"
 import s from "./Posts.module.css"
 
 export const Posts = () => {
